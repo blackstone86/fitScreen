@@ -1,0 +1,17 @@
+{
+  "name": "fitScreen",
+  "version": "0.0.1",
+  "description": "A simple library for resizing web page to fit mobile screen",
+  "main": "fitScreen.js",
+  "author": "Jimvin",
+  "license": "BSD",
+  "dependencies": {},
+  "repository": {
+    "type": "git",
+    "url": "git@github.com:blackstone86/fitScreen.git"
+  }
+  "keywords": [
+    "fitScreen",
+    "viewport"
+  ]
+}

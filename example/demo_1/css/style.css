@@ -1,0 +1,96 @@
+@charset "utf-8";
+/*reset*/
+html{font:1.5em/1.5 Arial,PMingLiU,sans-serif; word-wrap:break-word; -webkit-text-size-adjust:none; background:#b9b4b3; color:#322824;}
+body,div,dl,dt,dd,ul,ol,li,h1,h2,h3,h4,form,fieldset,legend,input,textarea,p,th,td,figure{margin:0; padding:0; border:none; outline:0; font-size:100%; vertical-align:baseline; background:transparent; }
+article, aside, figure, footer, header, hgroup, nav, section {display: block;}
+table{width:auto; border-collapse:collapse;border-spacing:0;}
+fieldset,img{border:0;}
+ol,ul{list-style:none;}
+caption,th{text-align:left;}
+h1,h2,h3,h4{font-size:100%;font-weight:normal;}
+input,textarea,select{font-family:inherit;font-size:inherit;font-weight:inherit;}
+textarea{resize:none;}
+a{text-decoration:none; }
+img{vertical-align:middle; display:block;}
+.clearfix:after {content: "\0020"; display: block; height: 0; clear: both;}
+.clearfix{zoom:1;}
+
+
+
+
+/*wrap*/
+.wrap{width:640px; margin:0 auto;  position:relative;}
+
+.header{height:240px; background:url(../images/header.jpg) no-repeat;}
+
+/*content*/
+
+.p1 .content{}
+
+
+.p1 .checkbox{margin-left:28px; }
+.p1 .checkbox label{margin-bottom:5px; display:block; }
+.p1 .checkbox .ipt_cb{ margin-right:10px; position:relative; top:-2px;}
+
+.p2 .content {background:#b9b4b3;}
+.p2 .content .form{background:url(../images/bg_middle.jpg) repeat-y; padding: 10px 40px 0; }
+.content .ft{background:url(../images/bg_footer.jpg) no-repeat; height:32px; }
+.p2 .content .title{color:#cf000d;}
+.p2 .content .ipt_name,.p2 .content .ipt_tel,.p2 .content .ipt_mail,.p2 .content .ipt_id{height:48px; line-height:48px; border:1px solid #322824; padding:0 5px; width:544px; background: #fff;}
+
+.p2 .content .p_id{position:relative;}
+.p2 .content .p_id span{position:absolute; right:5px;}
+
+.p2 .content .date{width:556px; background:url(../images/date.jpg) no-repeat; height:50px;}
+.p2 .content .date input{height:48px; line-height:48px;}
+.p2 .content .ipt_bday_1{width:186px; padding:0 10px; margin-right:32px;}
+.p2 .content .ipt_bday_2{width:72px; padding:0 5px; margin-right:28px;}
+.p2 .content .ipt_bday_3{width:75px; padding:0 5px;}
+.p2 .content label{width:198px; display:inline-block;}
+.p2 .content .part_1{margin-bottom:45px;}
+.p2 .content p{margin-bottom:5px;}
+.p2 .content input{margin-bottom:10px;}
+
+.p2 .content .sony{display:inline-block; background:url(../images/sony.jpg) no-repeat; width:92px; height:36px; position:relative; top:10px;}
+
+.p3 .content,.p4 .content {height:720px;}
+.content .text_box{font-size:1.3em; color:#cf000d; text-align:center;  background:url(../images/bg_middle.jpg) repeat-y; }
+.p3 .content .text_box{padding-top:180px; padding-bottom:170px;}
+.p4 .content .text_box{padding-top:150px; padding-bottom:140px;}
+.p3 .content .ft,.p4 .content .ft{margin-bottom:100px;}
+
+.content .j_scrollbox .title{font-size:1.2em;  color:#cf000d; font-weight:700; margin-bottom:5px;}
+.content .j_scrollbox .list{list-style:decimal; margin-left:40px; margin-bottom:30px; }
+.content .j_scrollbox a{color:#322824; text-decoration:underline;}
+
+/* scrollBar */
+.j_scrollbox,.j_scrollbox .j_cntbox,.j_scrollbox .j_cntwrap{ position:relative; } 
+.j_scrollbox{ background:url(../images/bg_middle.jpg) repeat-y; padding:0 50px; padding-top:10px; height:450px; overflow:hidden; width: 540px; }/*宽高为内容显示的最大尺寸*/
+.j_scrollbox .j_cntwrap,.j_scrollbox .j_bar{ height:100%; }
+.j_scrollbox .j_cntwrap{ width:100%; overflow:hidden; }
+.j_scrollbox .j_bar,.j_scrollbox .j_point{ right:-5px; position:absolute; background:#000; width:1px; }
+.j_scrollbox .j_bar{ top:0; }
+.j_scrollbox .j_point{ width:7px; right:-3px; height:30px; outline:none; }
+.j_scrollbox .j_bar.yellow,.j_scrollbox .j_bar.yellow .j_point{ background:#FDD100; }
+
+
+.btn{display:block; width:268px; height:76px; margin:20px auto 10px;}
+.btn_clear{background:url(../images/btn_clear.png) no-repeat;display:inline-block;}
+.btn_confirm{background:url(../images/btn_confirm.png) no-repeat;}
+.btn_more{background:url(../images/btn_more.png) no-repeat;}
+.btn_submit{background:url(../images/btn_submit.png) no-repeat; margin-left:28px; margin-right:40px;display:inline-block;}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
