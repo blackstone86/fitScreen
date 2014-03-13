@@ -184,3 +184,7 @@ window.onload = function(){
     );
 }; 
 ```
+
+##更新记录
+
+ - 2014/03/14 fixed 三星Note3不能获取正确分辨率的问题

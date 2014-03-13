@@ -146,8 +146,8 @@ var getAndroidVersion = function(){
   
   //版本号首位数字在ua字符串中的位置
   var versionIdx = Detector.ua_lowerCase.indexOf("android") + 8;
-  
-  var version = parseInt( Detector.ua_lowerCase.substring(versionIdx,++versionIdx), 10);
+ 
+  var version = parseFloat( Detector.ua_lowerCase.substring(versionIdx,versionIdx+3));
 	 
   return version;
   
@@ -166,26 +166,34 @@ var getAndroidDeviceResolution = function(){
 
   var resolution
 	   
-       ,isLandscape = getIsLandscape();
-  
+       ,isLandscape = getIsLandscape()
+
+       ,android_version = getAndroidVersion();
+
   if( Detector.isAndroid || Detector.isMeeGo ){
 	
 	  // Android 3-
-	  if( getAndroidVersion() < 3 ){
+	  if( android_version < 3 ){
 		  
 	  	resolution = window.outerWidth;
 		
 	  }
-	  // Android 3+
-	  else{
-		  
+	  // Android 3+ ~ 4.3-
+	  else if( android_version < 4.3 ){
+	  	
 		resolution = screen.width;
-		
+
 		//无法获取正确值，故无耐采用硬编码 
-	    Detector.isNexus7 && isLandscape && ( resolution = 1280 );
+	    Detector.isNexus7 && isLandscape && ( resolution = 1280 );	  	
+	  	
+	  }
+	  // Android 4.3+ (为了获取三星NOTE3的准确分辨率)
+	  else{
+        
+	  	resolution = window.outerWidth * window.devicePixelRatio;
 			  
 	  } 	
-	
+
   }
   
   /*
@@ -244,6 +252,7 @@ var getDeviceWidth_cssPixels = function(){
   else if( Detector.isAndroid || Detector.isMeeGo ){
 	
 	  deviceWidth_cssPixels = androidDeviceResolution / window.devicePixelRatio;
+	  
 	  
   }
   
